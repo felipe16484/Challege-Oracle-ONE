@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: #131313;
+}
+
+main {
+    background: #F3F5FC;
+    margin: auto;
+    margin-top: 25px;
+    padding: 40px;
+    width: 1360px;
+    height: 1024px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+section {
+    height: 100%;
+}
+
+section:nth-child(1) {
+    width: 120px;    
+}
+
+section:nth-child(2) {
+    width: 680px;
+}
+
+section:nth-child(3) {
+    background-color: #fff;
+    border-radius: 35px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-image {    
+    --c: #0A3871; /* Border Color */
+    --b: 7px;    /* Border Thickness*/
+    --g: 5px;     /* Hover Gap */
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+
+    background: 
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+}
+
+.logo-image:hover {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
+.input-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#input_text {
+    background-color: transparent;
+    border: none;
+    margin-top: 32px;
+    height: 800px;    
+    vertical-align: top;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-style:normal;
+    font-weight:500;
+    font-size: 32px;
+    line-height: 150%;
+    padding-top: 96px;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+#input_text:focus {
+    outline: unset;
+}
+
+#input_text::placeholder {
+    color: #0A3871;
+}
+
+#input_text::-webkit-scrollbar {
+    width: 5px;
+}
+
+#input_text::-webkit-scrollbar-track {
+    background: #F3F5FC;
+}
+
+#input_text::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+    border-radius: 100px;
+    border: 0px solid #ffffff;
+}
+
+.info-image {
+    cursor: text;
+    margin-top: 10px;
+}
+
+button {
+    height: 67px;
+    width: 328px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.15s ease-in;
+    
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.encrypt {
+    background: url(assets/encrypt_button.png);
+}
+
+.decrypt {
+    background: url(assets/decrypt_button.png);
+}
+
+.txt1 {
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.txt2 {
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#output_image {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.copy{
+    padding: 24px;
+    width: 336px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.copy-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+#output_no_image {
+    padding: 32px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#output_text {
+    background-color: transparent;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-style:normal;
+    font-weight:500;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871 !important;
+    width: 328px;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+#output_text:focus {
+    outline: unset;
+}
+
+#output_text::-webkit-scrollbar {
+    width: 5px;
+}
+
+#output_text::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+#output_text::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+    border-radius: 100px;
+    border: 0px solid #ffffff;
+} 
+
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <section>
+            <div class="logo" id="image_logo" title="¡Click para limpiar el texto ingresado!">
+                <img src="assets/alura_logo.png" alt="Logo" class="logo-image">
+            </div>
+        </section>
+            
+        <section>
+            <div class="input-section">
+
+                <textarea name="" id="input_text" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="info-image">
+                    <img src="assets/info_text.png" alt="">
+                </div>
+
+                <div class="buttons">
+                    <button class="encrypt" id="encrypt"></button>
+                    <button class="decrypt" id="decrypt"></button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="" id="output_image">
+                <div class="output-image">
+                    <img src="assets/output_figure.png" alt="">
+                </div>
+
+                <div class="output-texts">
+                    <p class="txt1">Ningún mensaje fue encontrado</p>
+                    <p class="txt2">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+
+            <div class="hidden" id="output_no_image">
+                
+                <output id="output_text"></output>
+
+                <button class="copy" id="copy_button">
+                    <label class="copy-text">Copiar</label>
+                </button>
+            </div>
+
+        </section>
+        
+    </main>
+</body>
+    <script src="main.js"></script>
+</html>
